@@ -1,5 +1,10 @@
 <?php
 session_start();
+
+echo "<pre>";
+print_r($_SESSION);
+echo "</pre>";
+
 $basket = $_SESSION['basket'] ?? [];
 $total = 0.0;
 foreach ($basket as $id => $row) {
